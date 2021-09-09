@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Welcome !</h1>
+<p>Search for a museum near your location :</p>
+
+
+<form action="/api/v1/museums" method="get">
+  <input type="text" name="lat" placeholder="What's the latitude?">
+  <input type="text" name="lng" placeholder="What's the longitude">
+  <input type="submit">
+</form>
